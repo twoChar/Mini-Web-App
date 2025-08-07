@@ -36,7 +36,7 @@ function App() {
   if (loading) return null // prevent route mismatch flash
 
   return (
-    <Router basename="/Mini-Web-App">
+    <Router basename="/mini-web-app">
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         {user && <Navigation user={user} />}
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
