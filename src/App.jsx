@@ -1,3 +1,4 @@
+// src/App.jsx
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import SignIn from './components/SignIn'
@@ -32,7 +33,7 @@ function App() {
     localStorage.setItem('user', JSON.stringify(updatedUser))
   }
 
-  if (loading) return null // ← prevent routing until user is ready
+  if (loading) return null // prevent route mismatch flash
 
   return (
     <Router basename="/Mini-Web-App">
@@ -64,6 +65,5 @@ function App() {
     </Router>
   )
 }
-
 
 export default App
