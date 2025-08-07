@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aaditya1617.github.io/mini-web-app/",
+  "homepage": "https://twochar.github.io/Mini-Web-App/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
