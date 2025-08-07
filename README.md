@@ -8,7 +8,7 @@ A responsive React dashboard that displays live weather, cryptocurrency prices, 
 
 ## 🔗 Live Demo
 
-[View on GitHub Pages]([https://yourusername.github.io/mini-web-app](https://twochar.github.io/mini-web-app)) <!-- Replace with your actual deployed link -->
+[View on GitHub Pages]([https://yourusername.github.io/mini-web-app]) <!-- Replace with your actual deployed link -->
 
 ---
 
