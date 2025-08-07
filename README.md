@@ -2,13 +2,13 @@
 
 A responsive React dashboard that displays live weather, cryptocurrency prices, and developer jokes. Built with modern tools and a clean UI to demonstrate API integration and frontend development skills.
 
-![App Screenshot](https://github.com/user-attachments/assets/your-image-here) <!-- Replace with actual screenshot URL -->
+ <!-- Replace with actual screenshot URL -->
 
 ---
 
 ## 🔗 Live Demo
 
-[View on GitHub Pages]([https://yourusername.github.io/mini-web-app]) <!-- Replace with your actual deployed link -->
+[View on GitHub Pages](https://twochar.github.io/mini-web-app) <!-- Replace with your actual deployed link -->
 
 ---
 
