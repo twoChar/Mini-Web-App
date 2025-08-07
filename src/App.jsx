@@ -7,12 +7,14 @@ import Navigation from './components/Navigation'
 
 function App() {
   const [user, setUser] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const savedUser = localStorage.getItem('user')
     if (savedUser) {
       setUser(JSON.parse(savedUser))
     }
+    setLoading(false)
   }, [])
 
   const handleSignIn = (userData) => {
@@ -30,8 +32,10 @@ function App() {
     localStorage.setItem('user', JSON.stringify(updatedUser))
   }
 
+  if (loading) return null // ← prevent routing until user is ready
+
   return (
-    <Router>
+    <Router basename="/Mini-Web-App">
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         {user && <Navigation user={user} />}
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
@@ -46,7 +50,13 @@ function App() {
             />
             <Route 
               path="/profile" 
-              element={user ? <Profile user={user} onUpdateProfile={updateProfile} onSignOut={handleSignOut} /> : <Navigate to="/" />} 
+              element={user ? (
+                <Profile 
+                  user={user} 
+                  onUpdateProfile={updateProfile} 
+                  onSignOut={handleSignOut} 
+                />
+              ) : <Navigate to="/" />} 
             />
           </Routes>
         </main>
@@ -54,5 +64,6 @@ function App() {
     </Router>
   )
 }
+
 
 export default App
