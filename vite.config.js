@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Mini-Web-App/', // 👈 match exactly what your repo is named
+  base: '/mini-web-app/', // 👈 match exactly what your repo is named
   plugins: [react()],
 })
